@@ -15,4 +15,15 @@ sub new {
 
 }
 $object = new Person( "Mohammad", "Saleem", 23234345);
-print "$object._";
+
+
+
+sub getFirstname{
+    my( $self ) = @_;
+   return $self->{_firstName};
+
+}
+#ici on fait l'appel à l'objet qu'on a récupérer puis on fait à la méthode getFirstname();
+my $prenom = $object -> getFirstname(); 
+print "$prenom";
+1;
